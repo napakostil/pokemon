@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Pokemon';
+    src: url('/pokemon.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    color: black !important;
+
+}
+
+h2 {
+    font-family: 'Pokemon', sans-serif;
+    font-size: min(40px, 7vw) !important;
+}
+
+img {
+    width: 80%;
+    padding: 60px;
+}
+
+.hidden {
+    opacity: 0;
+    display: none;
+}
+
+.no-border {
+    border: none !important;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+.pokemon-card {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.title-container {
+    margin-bottom: 40px;
+}
+
+.cp-text span {
+    font-size: 16px;
+}
+
+.img-container {
+    position: relative;
+    z-index: 2;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 30px 50px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100%;
+    margin-top: -150px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    padding-top: 20px;
+}
+
+.seperator {
+    border-color: #6EECB7 !important;
+    border-width: 10px;
+    border-radius: 5px;
+}
+
+.stats span.first {
+    border-right: 1px solid #e3e3e3
+}
+
+.attributes-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    text-transform: capitalize;
+    padding: 20px 0;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.attributes-container:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.attributes-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.cp-text {
+    padding: 0 10px;
+    border-right: 1px solid #e3e3e3;
+    margin: 0;
+}
+
+.cp-text:last-child {
+    border: none;
+}
+
+.player-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #e3e3e3;
+    text-align: center;
+}
+
+.data-container p {
+    margin-bottom: 0;
+}
+
+#update_name, #update_candy_title {
+    text-transform: capitalize;
+}
+
+@media (max-width: 992px) {
+    .player-data,
+    .attributes-content {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 460px) {
+    .detail-container {
+        padding: 100px 10px 50px;
+    }
+}

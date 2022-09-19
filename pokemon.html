@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Pokemon Codex</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
+</head>
+<body>
+
+<div class="container flex-center">
+    <h2>Your today's pokemon</h2>
+    <div class=" col-md-8 col-sm-10 .col-lg-8 pokemon-card" id="pokemon_details">
+        <div class="img-container">
+            <img id="update_img"
+                 src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+                 alt="" srcset="">
+        </div>
+
+        <div class="detail-container">
+            <div class="title-container">
+                <h3 class="name text-center" id="update_name">Pikachu</h3>
+                <hr class="seperator">
+                <div class="stats text-center">
+                    <span class="first cp-text col-md-6" id="update_hp">HP 32/32</span>
+                    <span class="cp-text col-md-6" id="update_cp">XP 149</span>
+                </div>
+            </div>
+
+            <div class="attributes-container">
+                <div class="attributes-content">
+                    <p class="cp-text" id="update_type">Electric / Speed</p>
+                    <small class="text-muted">Type</small>
+                </div>
+                <div class="attributes-content">
+                    <p class="cp-text" id="update_weight">5.58kg</p>
+                    <small class="text-muted">Weight</small>
+                </div>
+                <div class="attributes-content">
+                    <p class="cp-text no-border" id="update_height">0.82m</p>
+                    <small class="text-muted">Height</small>
+                </div>
+            </div>
+
+            <div class="player-data">
+                <div class="col data-container">
+                    <p class="stardust" id="update_stardust">500</p>
+                    <p class="text-muted">Stardust</p>
+                </div>
+                <div class="col data-container">
+                    <p class="stardust" id="update_candy">1</p>
+                    <p class="text-muted" id="update_candy_title">Pikachu Candy</p>
+                </div>
+            </div>
+
+            <div class="subtitle">Характеристики</div>
+
+            <div class="attributes-container">
+                <div class="attributes-content">
+                    <p class="cp-text" id="update_stat_hp">Electric / Speed</p>
+                    <small class="text-muted">hp</small>
+                </div>
+                <div class="attributes-content">
+                    <p class="cp-text" id="update_stat_attack">5.58kg</p>
+                    <small class="text-muted">attack</small>
+                </div>
+                <div class="attributes-content">
+                    <p class="cp-text no-border" id="update_stat_defense">0.82m</p>
+                    <small class="text-muted">defense</small>
+                </div>
+            </div>
+
+            <div class="attributes-container">
+                <div class="attributes-content">
+                    <p class="cp-text" id="update_stat_special-attack">Electric / Speed</p>
+                    <small class="text-muted">special-attack</small>
+                </div>
+                <div class="attributes-content">
+                    <p class="cp-text" id="update_stat_special-defense">5.58kg</p>
+                    <small class="text-muted">special-defense</small>
+                </div>
+                <div class="attributes-content">
+                    <p class="cp-text no-border" id="update_stat_speed">0.82m</p>
+                    <small class="text-muted">speed</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="pokemon-data.js"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
